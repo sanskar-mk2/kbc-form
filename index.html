@@ -5,11 +5,280 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>KBC Form</title>
-        <script src="https://play.tailwindcss.com"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+        ></script>
     </head>
-    <body>
-        <form>
-            
-        </form>
+    <body class="w-full min-h-screen">
+        <main class="flex items-center flex-col w-full">
+            <h1 class="text-3xl my-10 font-bold">Dovetail Drawer Order Form</h1>
+            <form class="flex flex-col divide-y-2 p-4">
+                <div class="flex w-full divide-x-2">
+                    <div class="p-4 basis-1/2">
+                        <div class="grid-cols-2 flex gap-2">
+                            <section class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Company</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Type here"
+                                    class="input input-bordered w-full"
+                                />
+                            </section>
+                            <section class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text"
+                                        >Job Name / P.O. #</span
+                                    >
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Type here"
+                                    class="input input-bordered w-full"
+                                />
+                            </section>
+                        </div>
+                        <section class="form-control w-full">
+                            <label class="label">
+                                <span class="label-text">Address</span>
+                            </label>
+                            <input
+                                type="text"
+                                placeholder="Type here"
+                                class="input input-bordered w-full"
+                            />
+                        </section>
+                        <div class="w-full grid-cols-3 flex gap-2">
+                            <section class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">City</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Type here"
+                                    class="input input-bordered w-full"
+                                />
+                            </section>
+                            <section class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">State</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Type here"
+                                    class="input input-bordered w-full"
+                                />
+                            </section>
+                            <section class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Zip</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Type here"
+                                    class="input input-bordered w-full"
+                                />
+                            </section>
+                        </div>
+                    </div>
+                    <div class="p-4 basis-1/2">
+                        <div class="grid-cols-2 flex gap-2">
+                            <section class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Date</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Type here"
+                                    class="input input-bordered w-full"
+                                />
+                            </section>
+                            <section class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Time</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Type here"
+                                    class="input input-bordered w-full"
+                                />
+                            </section>
+                        </div>
+                        <div class="w-full grid-cols-2 flex gap-2">
+                            <section class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Phone</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Type here"
+                                    class="input input-bordered w-full"
+                                />
+                            </section>
+                            <section class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Email</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Type here"
+                                    class="input input-bordered w-full"
+                                />
+                            </section>
+                        </div>
+                        <section class="form-control w-full">
+                            <label class="label">
+                                <span class="label-text">Order By</span>
+                            </label>
+                            <input
+                                type="text"
+                                placeholder="Type here"
+                                class="input input-bordered w-full"
+                            />
+                        </section>
+                    </div>
+                </div>
+                <div class="flex w-full items-center gap-4 divide-x-2">
+                    <div class="flex w-full flex-col divide-y-2">
+                        <section class="flex gap-4">
+                            <div class="form-control">
+                                <label
+                                    class="label cursor-pointer justify-start gap-2"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="radio-10"
+                                        class="radio checked:bg-blue-500"
+                                        checked
+                                    />
+                                    <span class="label-text">Maple</span>
+                                </label>
+                            </div>
+                            <div class="form-control">
+                                <label
+                                    class="label cursor-pointer justify-start gap-2"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="radio-10"
+                                        class="radio checked:bg-blue-500"
+                                        checked
+                                    />
+                                    <span class="label-text">Basswood</span>
+                                </label>
+                            </div>
+                        </section>
+                        <section class="flex gap-4">
+                            <div class="form-control">
+                                <label
+                                    class="label cursor-pointer justify-start gap-2"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="radio-10"
+                                        class="radio checked:bg-blue-500"
+                                        checked
+                                    />
+                                    <span class="label-text"
+                                        >Notch for Slides</span
+                                    >
+                                </label>
+                            </div>
+                            <div class="form-control">
+                                <label
+                                    class="label cursor-pointer justify-start gap-2"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="radio-10"
+                                        class="radio checked:bg-blue-500"
+                                        checked
+                                    />
+                                    <span class="label-text">No Notch</span>
+                                </label>
+                            </div>
+                        </section>
+                        <section class="flex gap-4">
+                            <div class="form-control">
+                                <label
+                                    class="label cursor-pointer justify-start gap-2"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="radio-10"
+                                        class="radio checked:bg-blue-500"
+                                        checked
+                                    />
+                                    <span class="label-text">Order</span>
+                                </label>
+                            </div>
+                            <div class="form-control">
+                                <label
+                                    class="label cursor-pointer justify-start gap-2"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="radio-10"
+                                        class="radio checked:bg-blue-500"
+                                        checked
+                                    />
+                                    <span class="label-text">Quote</span>
+                                </label>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="grow">
+                        <img
+                            src="./images/drwr_dims.jpg"
+                            alt="Drawer Dimensions"
+                        />
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Job</th>
+                                <th>Favorite Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- row 1 -->
+                            <tr>
+                                <th>1</th>
+                                <td>Cy Ganderton</td>
+                                <td>Quality Control Specialist</td>
+                                <td>Blue</td>
+                            </tr>
+                            <!-- row 2 -->
+                            <tr>
+                                <th>2</th>
+                                <td>Hart Hagerty</td>
+                                <td>Desktop Support Technician</td>
+                                <td>Purple</td>
+                            </tr>
+                            <!-- row 3 -->
+                            <tr>
+                                <th>3</th>
+                                <td>Brice Swyre</td>
+                                <td>Tax Accountant</td>
+                                <td>Red</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </main>
     </body>
 </html>
