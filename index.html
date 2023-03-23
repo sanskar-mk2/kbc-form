@@ -153,7 +153,6 @@
                                         type="radio"
                                         name="wood"
                                         class="radio checked:bg-blue-500"
-                                        checked
                                     />
                                     <span class="label-text">Maple</span>
                                 </label>
@@ -166,7 +165,6 @@
                                         type="radio"
                                         name="wood"
                                         class="radio checked:bg-blue-500"
-                                        checked
                                     />
                                     <span class="label-text">Basswood</span>
                                 </label>
@@ -181,7 +179,6 @@
                                         type="radio"
                                         name="notch"
                                         class="radio checked:bg-blue-500"
-                                        checked
                                     />
                                     <span class="label-text"
                                         >Notch for Slides</span
@@ -196,9 +193,22 @@
                                         type="radio"
                                         name="notch"
                                         class="radio checked:bg-blue-500"
-                                        checked
                                     />
                                     <span class="label-text">No Notch</span>
+                                </label>
+                            </div>
+                            <div class="form-control">
+                                <label
+                                    class="label cursor-pointer justify-start gap-2"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="notch"
+                                        class="radio checked:bg-blue-500"
+                                    />
+                                    <span class="label-text"
+                                        >Movento Notch</span
+                                    >
                                 </label>
                             </div>
                         </section>
@@ -211,7 +221,6 @@
                                         type="radio"
                                         name="order-or-quote"
                                         class="radio checked:bg-blue-500"
-                                        checked
                                     />
                                     <span class="label-text">Order</span>
                                 </label>
@@ -224,7 +233,6 @@
                                         type="radio"
                                         name="order-or-quote"
                                         class="radio checked:bg-blue-500"
-                                        checked
                                     />
                                     <span class="label-text">Quote</span>
                                 </label>
@@ -233,7 +241,7 @@
                     </div>
                     <div class="grow">
                         <img
-                            src="./images/drwr_dims.jpg"
+                            src="./images/2023Form.jpg"
                             alt="Drawer Dimensions"
                         />
                     </div>
@@ -374,7 +382,9 @@
                             </template>
                             <tr>
                                 <td>Total</td>
-                                <td x-text="rows.reduce((a, b) => a + parseInt(b.qty), 0)"></td>
+                                <td
+                                    x-text="rows.reduce((a, b) => a + parseInt(b.qty), 0)"
+                                ></td>
                                 <td colspan="5">
                                     <button
                                         type="submit"
